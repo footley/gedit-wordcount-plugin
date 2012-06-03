@@ -6,4 +6,4 @@ Name=Wordcount
 Description=Shows Wordcount in Statubar
 Authors=Jonathan Butcher <footley@gmail.com>
 Copyright=Copyright © 2012 Jonathan Butcher <footley@gmail.com>
-Website=http://www.na.org
+Website=https://github.com/footley/gedit-wordcount-plugin
