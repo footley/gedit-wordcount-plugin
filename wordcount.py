@@ -43,9 +43,12 @@ class WordcountPlugin(GObject.Object, Gedit.WindowActivatable):
         if self._doc_changed_id:
             self._doc_changed_id[0].disconnect(self._doc_changed_id[1])
         doc = self.window.get_active_document()
-        self._doc_changed_id = (doc, 
-            doc.connect("changed", self.on_document_changed))
-        self.update_label(doc)
+        if doc:
+            self._doc_changed_id = (doc, 
+                doc.connect("changed", self.on_document_changed))
+            self.update_label(doc)
+        else: # user closed all tabs
+            self._label.set_text('')
     
     def on_document_changed(self, doc):
         """active documents content has changed"""
