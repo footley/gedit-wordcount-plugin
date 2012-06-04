@@ -7,4 +7,8 @@ wordcount, where a word is definied as ``r"[a-zA-Z0-9]+[a-zA-Z0-9\-']*\s?"``
 Installation
 ------------
 
-Copy ``wordcount.plugin`` and ``wordcount.py`` to ``/home/[user]/.local/share/gedit/plugins`` then activate from Gedit's plugins dialog.
+Either run the script ``./install.sh`` provided or:
+
+Copy ``wordcount.plugin`` and ``wordcount.py`` to ``~/.local/share/gedit/plugins`` then activate from Gedit's plugins dialog.
+
+
